@@ -1,0 +1,228 @@
+/* Folhas de estilo principal
+*
+* Marcelo Barbosa,
+* setembro, 2016.
+*/
+
+html, body
+{
+    width: 100%;
+    min-width: 1200px;	
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;		
+}
+
+body
+{
+    background-color: #000000;
+    background-image: url('../Assets/Images/backgrounds/UFSCar002.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.scenery
+{		
+    width: auto;	
+    height: auto;    
+}
+
+.center
+{
+    text-align: center;
+}
+
+.title1
+{
+    font-family: arial black;
+    font-size: large;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.clockBlock, .bussTitleBlock
+{	
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;    
+}
+
+.clockBlock
+{    
+    background: linear-gradient(#000000,#1E90FF);    
+}
+
+.title2
+{
+    font-family: arial black;
+    font-size: x-large;
+}
+
+.title3 
+{
+    font-family: arial black;
+    font-size: xx-large;
+}
+
+.whiteTitle
+{
+    color: #FFFFFF;
+}
+
+.header
+{
+    padding: 0px;
+    width: 100%;
+    min-height: 60px;
+    max-height: 60px;	
+    float: left;	
+    margin-bottom: 25px;
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: 5px solid #1E90FF;
+    box-shadow: 0px 3px 18px #000000;    
+}
+
+.parallax
+{
+    background-attachment: fixed;
+}
+
+.content
+{		
+    width: 100%;	
+    float: left;	
+}
+
+.content .news
+{
+    width: 40%;	    
+    max-height: 500px;
+    float: left;
+    margin: 0px;	
+    padding-bottom: 50px;	
+    overflow-y: scroll;	
+    overflow-x: hidden;	    
+    -ms-overflow-style: none;	
+}
+
+.content .news::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.content .schedule
+{
+    width: 60%;
+    height: 100%;
+    float: right;	
+    margin: 0px;
+    overflow-y: scroll;	
+    overflow-x: hidden;	    
+    -ms-overflow-style: none;		
+}
+
+.content .schedule::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.newsTitle
+{
+    width: 40%;
+    float: left;
+    text-align: center;    
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scheduleTitle
+{
+    width: 60%;
+    float: right;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scheduleContent
+{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid
+{
+    float: left;		
+    transition: all linear 0.3s;
+    box-shadow: 0px 5px 10px #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-bottom: 20px;	
+    margin-right: 15px;
+}
+
+.grid .gridDescribe .describe
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.emphasis
+{
+    width: 97%;	
+    min-height: 550px;		
+}
+
+.large
+{
+    width: 80%;
+    min-height: 300px;		
+}
+
+.big
+{
+    width: 70%;
+    min-height: 350px;
+}
+
+.medium
+{
+    width: 47%;
+    min-height: 300px;
+}
+
+.small
+{
+    width: 25%;
+    min-height: 100px;
+}
+
+.card:hover, .card:active
+{	
+    box-shadow: 0px 0px 30px #FFFFFF inset;
+    transition: all linear 0.3s;
+    transform: rotate(15deg);     
+}
+
+.timeBus
+{
+    font-weight: bold;
+}

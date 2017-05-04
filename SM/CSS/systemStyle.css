@@ -1,0 +1,553 @@
+/* Folhas de estilo principal
+*
+* Marcelo Barbosa,
+* outubro, 2016.
+*/
+html, body
+{
+    width: 100%;
+    min-width: 1150px;	
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;		
+}
+
+body
+{
+    background: linear-gradient(#000000,#00BFFF,#00F5FF);
+    background-attachment: fixed;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.left
+{
+    text-align: left;
+}
+
+.contentManagement
+{
+    width: 90%;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.managementItem 
+{
+    width: 95%;
+    min-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.managementItemHead
+{
+    width: 95%;
+    min-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px groove #FFFFFF;
+}
+
+.managementItem:hover
+{
+    background-color: rgba(0,0,0, 0.3);
+    box-shadow: 0px 0px 15px #000000 inset;
+    border-radius: 10px;    
+    transition: all linear 0.3s;
+}
+
+.managementItem .categoryColumn, .managementItemHead  .categoryColumn
+{
+    width: 75%;    
+    min-height: 20px;    
+    display: inline-block;
+    text-align: justify;
+    font-family: arial;
+    font-size: large;        
+}
+
+.managementItem .newsTitleColumn, .managementItem .lineTitleColumn, .managementItemHead .newsTitleColumn, .managementItemHead .lineTitleColumn
+{
+    width: 55%;
+    min-height: 20px;    
+    display: inline-block;
+    text-align: justify;
+    font-family: arial;
+    font-size: large;    
+}
+
+.managementItem .newsDateTimeColumn, .managementItem .lineDateTimeColumn, .managementItemHead .newsDateTimeColumn, .managementItemHead .lineDateTimeColumn
+{
+    width: 10%;
+    min-height: 20px;
+    display: inline-block;
+    font-family: arial;
+    font-size: large;  
+    text-align: center;
+}
+
+.managementItem .managePanel
+{
+    width: 25%;
+    min-height: 20px;    
+    display: inline-block;
+    font-family: arial;
+    font-size: large;
+    text-align: right;
+}
+
+.dbNavigator
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;    
+}
+
+.formStyle3
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.linkButton
+{
+    border-radius: 5px;    
+    border: 0px;
+    background: linear-gradient(#2693FF,#001A66);
+    box-shadow: 0px 0px 15px #000000;
+    padding: 10px;    
+    font-family: arial black;
+    color: #FFFFFF;
+    font-size: medium;   
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: all linear 0.5s;
+}
+
+.linkButton:hover, .linkButton:active
+{
+    background: linear-gradient(#FFFFFF,#FFFFFF);
+    color: #000000;
+}
+
+.simpleLink
+{
+    border-radius: 5px;    
+    border: 0px;
+    background: linear-gradient(#2693FF,#001A66);
+    box-shadow: 0px 0px 15px #000000;
+    padding: 10px;    
+    font-family: arial black;
+    color: #FFFFFF;
+    font-size: medium;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: all linear 0.5s;
+}
+
+.simpleLink:active
+{
+    background: linear-gradient(#5A5A5A,#000000);
+}
+
+.simpleLink:hover
+{
+    background: linear-gradient(#FFFFFF,#FFFFFF);
+    color: #000000;
+    transition: all linear 0.5s;
+}
+
+.simpleLinkPointer
+{
+    border-radius: 5px;    
+    border: 0px;
+    background: linear-gradient(#FFFFFF,#DCDCDC);
+    box-shadow: 0px 0px 15px #000000;
+    padding: 10px;    
+    font-family: arial black;
+    color: #000000;
+    font-size: medium;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.scenery
+{		
+    width: auto;	
+    height: auto;
+}
+
+.center
+{
+    text-align: center;    
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.title1
+{
+    font-family: arial black;
+    font-size: large;
+}
+
+.title2
+{
+    font-family: arial black;
+    font-size: x-large;
+}
+
+.title3 
+{
+    font-family: arial black;
+    font-size: xx-large;
+}
+
+.bussTitle
+{	
+    padding: 5px;
+
+}
+
+.whiteTitle
+{
+    color: #FFFFFF;
+}
+
+.blueEmphases
+{
+    font-family: verdana;
+    font-weight: bolder;
+    color: #00FFFF;
+}
+
+.greenEmphases
+{
+    font-family: verdana;
+    font-weight: bolder;
+    color: #C0FF3E;
+}
+
+.yellowEmphases
+{
+    font-family: verdana;
+    font-weight: bolder;
+    color: #FFFF00;
+}
+
+.header
+{
+    padding: 0px;
+    width: 100%;
+    min-height: 60px;
+    max-height: 60px;	
+    float: left;		
+    background-color: #4876FF;
+    box-shadow: 0px 3px 18px #000000;	
+}
+
+.parallax
+{
+    background-attachment: fixed;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.content
+{		
+    width: 100%;	
+    float: left;		
+}
+
+.card
+{
+    box-shadow: 0px 2px 20px #000000;
+}
+
+.contentBlock
+{		
+    width: 100%;
+    min-width: 800px;
+    min-height: 300px;
+    background-color: rgba(0,0,0,0.25);
+    border: 0px;
+    padding: 0px;
+    margin: 0px;    
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.tileRound1
+{
+    border-radius: 0% 0% 50% 50%;
+}
+
+
+.formStyle1
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;    
+    padding-bottom: 10px;
+}
+
+.formStyle1 input[type=text], .formStyle1 input[type=password], select, .formStyle1 input[type=file]
+{
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;    
+    font-family: arial;
+    width: 100%;
+}
+
+.formStyle1 textarea
+{
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;    
+    font-family: consolas, arial;
+    width: 100%;
+    height: 150px;
+}
+
+.formStyle1 input[type=button], .formStyle1 input[type=reset], .formStyle2 input[type=button], .formStyle1 .formButtonLink
+{
+    border-radius: 5px;    
+    border: 0px;
+    background: linear-gradient(#2693FF,#001A66);
+    box-shadow: 0px 0px 15px #000000;
+    padding: 10px;    
+    font-family: arial black;
+    color: #FFFFFF;
+    font-size: x-large;
+    width: 100%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formStyle1 .formButtonLink
+{
+    text-decoration: none;
+    font-size: large;    
+}
+
+.formStyle1 input[type=button].backButton
+{
+    border-radius: 5px;    
+    border: 0px;
+    background: linear-gradient(#00E5FF,#002F5B);
+    box-shadow: 0px 0px 15px #000000;
+    padding: 10px;    
+    font-family: arial black;
+    color: #FFFFFF;
+    font-size: x-large;
+    width: 100%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formStyle1 input[type=button]:active, .formStyle1 input[type=reset]:active, .formStyle2 input[type=button]:active, .formStyle1 .formButtonLink:active
+{
+    background: linear-gradient(#5A5A5A,#000000);	
+}
+
+.formStyle1 input[type=button].backButton:active
+{
+    background: linear-gradient(#FFFFFF,#F8F8FF);
+    color: #000000;
+}
+
+.loginArea form input:focus, .formStyle1 textarea:focus, .formStyle1 input[type=text]:focus, .formStyle1 input[type=password]:focus, select:focus
+{
+    box-shadow: 0px 0px 30px #FFFFFF;    
+}
+
+.menu
+{
+    font-family: arial black;
+    color:#FFFFFF;
+}
+
+.menu a
+{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.menu .dropdown
+{
+    display: inline-block;		
+    margin: 0px;	
+    cursor: pointer;	
+    width: 250px;
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.menu .dropdown:hover, .activeResource .dropdownTitle:hover, .activeResource a:hover
+{
+    background-color: #FFFFFF;
+    color: #000000;		
+}
+
+.menu .dropdown>.dropdownTitle
+{
+    padding: 19px;
+}
+
+.menu .dropdown>.dropdownContent
+{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    position:absolute;	
+    list-style: none;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    width: 250px;
+    top:60px;
+    color: #000000;
+
+}
+
+.menu .dropdown>.dropdownContent>.dropdownItem
+{
+    padding: 10px 19px 10px 19px;	
+}
+
+.menu .dropdown>.dropdownContent>.dropdownItem:hover 
+{
+    background-color: #4876FF;
+    box-shadow: 0px 0px 15px #000000 inset;
+    color: #FFFFFF;	
+}	
+
+.menu .dropdown>.dropdownContent>.lastItem:hover
+{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menu .dropdown:hover>.dropdownContent
+{	
+    display: block;	    
+}
+
+.bussLogo
+{
+    width: 500px;
+    height: 200px;
+    background-image: url('../Assets/Images/logo/bussLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.positiveMessage
+{
+    width: 90%;    
+    margin-left: auto;
+    margin-right: auto;    
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    border-radius: 50px;
+    border: 5px solid #7FFF00;
+    background: linear-gradient(#00FF00, #2A2A2A);
+    text-align: center;
+    color: #7FFF00;
+    margin-top: 30px;  
+    box-shadow: 0px 0px 15px #000000;
+}
+
+.negativeMessage
+{
+    width: 90%;    
+    margin-left: auto;
+    margin-right: auto;    
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    border-radius: 50px;
+    border: 5px solid #FF3030;
+    background: linear-gradient(#CD0000, #2A2A2A);
+    text-align: center;
+    color: #FF0000;
+    margin-top: 30px;  
+    box-shadow: 0px 0px 15px #000000;
+}
+
+.message
+{
+    width: 90%;    
+    margin-left: auto;
+    margin-right: auto;    
+    padding-top: 20px;
+    padding-bottom: 20px;        
+    background-color: #4876FF;
+    box-shadow: 0px 5px 18px #000000; 
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+.managementTable
+{
+    width: 100%;
+    border: 0px;	
+    background: linear-gradient(#9FB6CD,#FFFFFF);
+    box-shadow: 0px 5px 10px #000000;	
+    border-spacing: 0px 0px;
+    font-size: x-large;
+    font-family: arial;
+    margin-top: 10px;
+}
+
+.simpleTable td
+{		
+    padding: 10px;
+}

@@ -1,0 +1,89 @@
+.carouselWrapper
+{ 
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;	
+    position: relative;
+    overflow: hidden;	
+    box-shadow: 0px 0px 15px #000000;
+    background-color: rgba(0,0,0,0.7);	
+}
+
+.carouselImageList
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carouselImageList li
+{	
+    display: inline-block;
+    position: absolute;
+}
+
+.carouselImageList li .imageBox
+{    
+    background-size: cover;
+    background-position: center;
+}
+
+.carouselImageList li .textBox
+{    
+    width: 100%;
+    min-height: 60px;
+}
+
+.carouselImageList li .textBox .textBoxContent
+{    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textBox
+{	
+    color: white;
+    border-top: 5px solid #1E90FF;
+    text-align: justify;	    
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+}
+
+.hide
+{	
+    width: 0%;		
+    overflow: hidden;	
+    transition: all linear 0.5s;
+}
+
+.hide>.textBox
+{	
+    opacity: 0;
+}
+
+.show
+{
+    width: 100%;        
+    transition: all linear 0.5s;	
+}
+
+.show>.textBox
+{
+    opacity: 1;        
+    transition: all linear 1s;	
+}
+
+.display
+{
+    width: 100%;	
+}
+
+@keyframes spin
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
